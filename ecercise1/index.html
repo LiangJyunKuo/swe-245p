@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: skyblue;
+        padding: 50px 25px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      h1 {
+        color: orange;
+      }
+
+      p {
+        color: palevioletred;
+      }
+
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      /* Style the navigation menu */
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>Hobbies</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Eating">EAT</a></li>
+          <li>
+            <a
+              href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep"
+              >SLEEP</a
+            >
+          </li>
+          <li><a href="https://www.cnn.com/travel">TRAVEL</a></li>
+        </ul>
+      </nav>
+
+      <article>
+          <h1>EAT</h1>
+          <p>Eating (also known as consuming) is the ingestion of food.</p>
+          <p>
+            In the natural biological world, this is typically to provide a
+            heterotrophic organism with energy and nutrients and to allow for
+            growth.
+          </p>
+        </div>
+      </article>
+
+      <article>
+          <h1>SLEEP</h1>
+          <p>
+            Sleep is an important part of your daily routine—you spend about
+            one-third of your time doing it.
+          </p>
+          <p>
+            sleep – and getting enough of it at the right times -- is as
+            essential to survival as food and water. Without sleep you can’t
+            form or maintain the pathways in your brain that let you learn and
+            create new memories, and its harder to concentrate and respond
+            quickly.
+          </p>
+      </article>
+
+      <article>
+          <h1>TRAVEL</h1>
+          <p>
+            Travel is the movement of people between distant geographical
+            locations.
+          </p>
+          <p>
+            Travel can be done by foot, bicycle, automobile, train, boat, bus,
+            airplane, ship or other means, with or without luggage, and can be
+            one way or round trip.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>Liang Jyun Kuo</p>
+      <a href="https://github.com/ooo88888888/swe-245p">Github</a>
+    </footer>
+  </body>
+</html>
